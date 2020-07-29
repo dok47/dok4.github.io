@@ -1,2 +1,2 @@
-# dok47.github.io
+# dok7.github.io
 турагенство
