@@ -1,0 +1,146 @@
+// main: style.less
+
+.stage{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.stageinner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.stagetext{
+    margin-left: 150px;
+}
+
+.stagetext h2{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 90px;
+    color: @blackh2;
+}
+.textimet{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.textwork {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.textwork h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0px;
+    margin-right: 20px;
+    
+}
+.textwork h4{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0px;
+}
+.textinner p{
+    margin-top: 0em;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.textbottom{
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .stageinner{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .stagetext{
+        margin-left: 0px;
+    }
+    .stagetext h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+    }
+    .stageinner{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .stagetext{
+        margin-left: 0px;
+    }
+    .stagetext h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+	.container {
+    width: 540px;	}
+    .stageinner{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .stageinner img{
+        width: 100%;
+
+    }
+    .stagetext{
+        margin-left: 0px;
+    }
+    .stagetext h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    .textimet{
+        width: 100%;
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+		
+    }
+    .stageinner{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .stageinner img{
+        width: 100%;
+
+    }
+    .stagetext{
+        margin-left: 0px;
+    }
+    .stagetext h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    .textimet{
+        width: 100%;
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}

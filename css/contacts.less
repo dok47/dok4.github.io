@@ -1,0 +1,151 @@
+// main: style.less
+.contacts{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.contactsinner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactsintem{
+    width: 550px;
+    
+    
+}
+.contactsintem h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: @blackh2;
+    margin-bottom: 30px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    
+
+}
+.contactright{
+    margin-right: 180px;
+}
+.contactinner h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: @black;
+
+}
+.contactinner p{
+    width: 150px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.consultation h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: @blackh2;
+    margin-bottom: 40px;
+
+}
+.consultation p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.form
+
+.form h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.form input{
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid @black;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: block;
+    outline: none;
+}
+.formbtn{
+    width: 200px;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: none;
+    color: @black;
+    outline: none;
+    border: 1px solid @black;
+    padding: 16px  32px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        background-color: @black;
+        color: @white;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .consultation{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .contactsintem{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+    }
+    .consultation{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .contactsintem{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+	.container {
+    width: 540px;	}
+    .consultation{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .contactsintem{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+		
+    }
+    .contact {
+        justify-content: space-between;
+    }
+    .consultation{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .contactsintem{
+        margin: 0 auto;
+    }
+}

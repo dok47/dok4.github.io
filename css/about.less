@@ -1,0 +1,134 @@
+// main: style.less
+.about{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.aboutinner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutleft h2{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: @blackh2;
+}
+.lefttext{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 70px;
+}
+.lefttext h3 {
+    width: 380px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 65px;
+}
+.lefttext img{
+    height: 3px;
+}
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.innerright{
+    margin-right: 70px;
+}
+.innerrighttu{
+    margin-right: 123px;
+
+}
+.advantagestop{
+    margin-top: 50px;
+}
+.advantagesinner p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #201E1E;
+}
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .aboutinner{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutimg{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+    }
+    .aboutinner{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutimg{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .advantages{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+	.container {
+    width: 540px;	}
+    .aboutleft h2{
+        font-size: 25px;
+    }
+    .aboutinner{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutimg{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .advantages{
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+		
+    }
+    .aboutleft h2{
+        font-size: 25px;
+    }
+    .aboutinner{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutimg{
+
+        margin-top: 30px;
+    }
+    .advantages{
+        margin-left: 10px;
+    }
+    .advantagesinner img {
+        width: 35px;
+        height: 35px;
+
+    }
+    .lefttext h3{
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .advantagesinner p{
+        font-size: 15px;
+    }
+}

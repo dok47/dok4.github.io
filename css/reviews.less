@@ -1,0 +1,144 @@
+// main: style.less
+.reviews{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.reviews h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: @blackh2;
+}
+.reviewsinner{
+    position: relative;
+    align-items: center;
+}
+.reviewsintem{
+    max-width: 500px;
+    height: 200px;
+    background-color:#EAE6E6 ;
+    padding-top: 25px;
+    padding-left: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: none;
+    outline: none;
+    align-items: center;
+}
+.client{
+    vertical-align: middle;
+    margin-left: 40px;
+}
+.client img{
+    margin-right: 30px;
+}
+.client h3{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.reviewsintem p{
+    width: 300px;
+    font-size: 15px;
+    font-weight: 400;
+    color: @blackabout;
+    margin-top: 5px;
+}
+
+
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+.reviewsinner .slick-arrow{
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 0;
+   width: 50px;
+   height: 80px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   
+   
+}
+.reviewsinner .slick-slide{
+    display: flex;
+    justify-content: center;
+}
+.reviewsinner .slick-arrow.slick-prev{
+    left: 0;
+    background: url("../img/back.svg") 0 0/100% no-repeat;
+}
+.reviewsinner .slick-arrow.slick-next{
+    
+    right: 0;
+    background: url("../img/next.svg") 0 0/100% no-repeat;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .reviewsintem {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+    }
+    .reviewsintem {
+        max-width: 100%;
+    }
+    .reviewsintem p {
+        width: 250px;
+    }
+    .reviewsinner .slick-arrow{
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+	.container {
+    width: 540px;	}
+    .reviewsintem {
+        max-width: 100%;
+
+    }
+    .reviewsintem p {
+        width: 220px;
+        font-size: 13px;
+    }
+    .reviewsinner .slick-arrow{
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+		
+    }
+    .reviewsintem {
+        max-width: 100%;
+
+    }
+    .reviewsintem p {
+        width: 220px;
+        font-size: 13px;
+    }
+    .reviewsinner .slick-arrow{
+        opacity: 0;
+    }
+}
